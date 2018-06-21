@@ -1,31 +1,24 @@
 package loom.hola_mundo;
 
 /**
- * La clase HolaMundo.
+ * Clase Hola Mundo en Java.
  */
 public class HolaMundo {
 
-    /** The Constant VACIO. */
-    private static final String VACIO = "";
-
     /**
-     * Saludar.
+     * Metodo saludar
      *
-     * @param persona nombre de la persona a la que quiero saludar
-     * @return String el saludo
+     * @param El parametro persona indica el nombre de la persona a la que quiero saludar
+     * @return Se devuelve un String con el saludo 
      */
     public String saludar(final String persona) {
-        if (persona == VACIO) {
-            return "¡Hola!";
-        } else {
             return "¡Hola, " + persona + "!";
-        }
     }
 
     /**
-     * Saludar.
+     * Metodo saludar sin parametros
      *
-     * @return String el saludo
+     * @return Se devuelve un String con el saludo "Hola!"
      */
     public String saludar() {
         return "¡Hola!";
