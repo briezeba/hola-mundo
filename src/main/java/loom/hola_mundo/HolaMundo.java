@@ -1,10 +1,34 @@
 package loom.hola_mundo;
 
-public class HolaMundo {	//Clase Hola Mundo la cual por ahora posee un unico metodo, Saludar
+/**
+ * La clase HolaMundo.
+ */
+public class HolaMundo {
 
-    public String saludar(final String persona){ //Metodo el cual saluda a la persona pasada como parametro, devuelve un String con el formato "¡Hola, [persona] !
-        return "¡Hola, " + persona + "!";
+    /** The Constant VACIO. */
+    private static final String VACIO = "";
+
+    /**
+     * Saludar.
+     *
+     * @param persona nombre de la persona a la que quiero saludar
+     * @return String el saludo
+     */
+    public String saludar(final String persona) {
+        if (persona == VACIO) {
+            return "¡Hola!";
+        } else {
+            return "¡Hola, " + persona + "!";
+        }
     }
-	
+
+    /**
+     * Saludar.
+     *
+     * @return String el saludo
+     */
+    public String saludar() {
+        return "¡Hola!";
+    }
 }
 
