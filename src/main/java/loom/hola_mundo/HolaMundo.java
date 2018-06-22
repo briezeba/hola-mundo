@@ -1,12 +1,12 @@
 package loom.hola_mundo;
 
 /**
- * La clase HolaMundo.
+ * Class HolaMundo.
  */
 public class HolaMundo {
 
      /**
-     * Meotod Saludar.
+     * Metodo Saludar.
      *
      * @param persona a la que saludaremos
      * @return String saludando
